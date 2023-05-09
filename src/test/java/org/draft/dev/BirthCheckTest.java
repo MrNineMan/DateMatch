@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class BirthCheckTest {
 
     @Container
-    public static MySQLContainer<?> sqlContainer = new MySQLContainer<>("mysql:5.5");
+    public static MySQLContainer<?> sqlContainer = new MySQLContainer<>("mysql:8.0");
     private ResultSet rs;
 
 
