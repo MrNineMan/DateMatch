@@ -22,7 +22,7 @@ public class BirthCheckTest {
     public void setUp() {
       try {
         Connection conn = DriverManager.getConnection(sqlContainer.getJdbcUrl(), sqlContainer.getUsername(), sqlContainer.getPassword());
-        //create a table in the database
+        //create the persons table in the database
         Statement state = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
         state.execute("CREATE TABLE Persons (\n" +  //You can return a
                       "    ID INT NOT NULL DEFAULT 0, \n" +
