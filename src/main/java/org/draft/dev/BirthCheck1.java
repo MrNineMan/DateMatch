@@ -13,7 +13,7 @@ public class BirthCheck {
             while (rs.next()) {
                 // Retrieves the birtdate from the second column
                 java.sql.Date birthDate = rs.getDate(2);              
-                //Checks if the birthyear is lesser 1990 
+                //Checks if the birthyear is less than 1990 
                 if (1990 > birthDate.getYear()) {
                     //if the above condition is true, delete the record
                     rs.deleteRow();
